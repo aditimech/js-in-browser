@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var-Hoisting</title>
+</head>
+<body onload="getVariable()">
+    <input type="button" value="Get User Name" onclick="getUserName()">  
+
+
+
+
+    <script>
+        var userName = 'Joe'; //global variable
+        // console.log(userName);
+    function getUserName(){
+        alert(userName); 
+    }
+
+
+        function getVariable(){
+            let userName = 'Aditi'; //userName has function scope
+            console.log(`this is the userName from the getVariable function ${userName}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var-let</title>
+</head>
+<body>
+    <script>
+        //Block scope
+        function addNumbers(a,b,c){
+           if (a < 0) {
+            var sum = Math.abs(a) + Math.abs(b) + Math.abs(c);
+           } else {
+            var sum = a + b + c;
+           }
+           console.log(sum);
+        }
+
+
+
+        var myScore = 4; //declaring a variable twice
+        var myScore = 10; //reassigning the value of a variable
+        console.log(myScore);
+    </script>
+</body>
+</html>

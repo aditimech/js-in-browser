@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuctions Introduction</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+
+    <script>
+        //function statement
+        function welcomeUser() {
+            let userName = "Aditi";
+            const h1 = document.querySelector('header>h1');
+            h1.innerText += ` ${userName}`;
+        }
+        welcomeUser();
+// write a function that storea your favourite band in a var and logs it to the console
+ function favSinger() {
+    let singerName = "Sonu Nigam";
+    // console.log(singerName);
+    console.log(`My favorite singer is ${singerName}`);
+    return singerName;
+ }
+ window.addEventListener('load', favSinger);
+ let h2 = document.createElement('h2')
+ console.log(h2);
+ document.querySelector('header').appendChild(h2).innerText = favSinger();
+
+
+
+
+    </script>
+
+</body>
+</html>

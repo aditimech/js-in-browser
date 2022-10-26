@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WB3 Exercise</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        function getSocSecTax(grossPay, taxRate) {
+            let socSecTax = grossPay*taxRate;
+            return socSecTax;
+        }
+        console.log(`socSecTax is ${ getSocSecTax( 750, 0.062)}`);
+
+        function getMedicareTax(grossPay, taxRate){
+            let medicareTax = grossPay*taxRate;
+            return medicareTax;
+
+        }
+        console.log(`medicareTax is ${ getMedicareTax( 750, 0.0145)}`);
+
+
+    function getFederalTax(grossPay, whCode){
+    let taxRate;
+    let federalTax = grossPay * taxRate;
+    if (whCode == 0) {
+        taxRate = 0.23;
+    } else if (whCode == 1){
+        taxRate = 0.21;
+    } else if (whCode == 2){
+        taxRate = 0.195;
+    } else if (whCode == 3){
+        taxRate = 0.185;
+    } else if ( whCode == 4 && whCode >= 4){
+        taxRate = 0.18;
+
+    }
+    return federalTax;
+    
+}
+console.log(`Federal tax is ${getFederalTax(750, 3)}`);
+
+    </script>
+
+</body>
+</html>
+
